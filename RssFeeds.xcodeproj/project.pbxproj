@@ -6,7 +6,23 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		57F5EFA2186C3E0C00924012 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 57F5EFA5186C3E0D00924012 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				57F5EFA6186C3E9A00924012 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		57CBF58118375C5F00DD7878 /* MTTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CBF58018375C5F00DD7878 /* MTTestViewController.m */; };
+		57D4D097183F19FF00806A2C /* MTheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D4D096183F19FF00806A2C /* MTheckViewController.m */; };
 		57D733A41835526E00E9801F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57D733A31835526E00E9801F /* Foundation.framework */; };
 		57D733A61835526E00E9801F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57D733A51835526E00E9801F /* CoreGraphics.framework */; };
 		57D733A81835526E00E9801F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57D733A71835526E00E9801F /* UIKit.framework */; };
@@ -34,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57CBF57F18375C5F00DD7878 /* MTTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTestViewController.h; sourceTree = "<group>"; };
+		57CBF58018375C5F00DD7878 /* MTTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTestViewController.m; sourceTree = "<group>"; };
+		57D4D095183F19FF00806A2C /* MTheckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTheckViewController.h; sourceTree = "<group>"; };
+		57D4D096183F19FF00806A2C /* MTheckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTheckViewController.m; sourceTree = "<group>"; };
 		57D733A01835526E00E9801F /* RssFeeds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RssFeeds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D733A31835526E00E9801F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		57D733A51835526E00E9801F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +73,7 @@
 		57D733CA1835526E00E9801F /* RssFeedsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RssFeedsTests-Info.plist"; sourceTree = "<group>"; };
 		57D733CC1835526E00E9801F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		57D733CE1835526E00E9801F /* RssFeedsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RssFeedsTests.m; sourceTree = "<group>"; };
+		57F5EFA7186C3F4A00924012 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +103,7 @@
 		57D733971835526E00E9801F = {
 			isa = PBXGroup;
 			children = (
+				57F5EFA7186C3F4A00924012 /* Readme */,
 				57D733A91835526E00E9801F /* RssFeeds */,
 				57D733C81835526E00E9801F /* RssFeedsTests */,
 				57D733A21835526E00E9801F /* Frameworks */,
@@ -117,6 +139,10 @@
 				57D733B51835526E00E9801F /* Main.storyboard */,
 				57D733B81835526E00E9801F /* MTViewController.h */,
 				57D733B91835526E00E9801F /* MTViewController.m */,
+				57CBF57F18375C5F00DD7878 /* MTTestViewController.h */,
+				57CBF58018375C5F00DD7878 /* MTTestViewController.m */,
+				57D4D095183F19FF00806A2C /* MTheckViewController.h */,
+				57D4D096183F19FF00806A2C /* MTheckViewController.m */,
 				57D733BB1835526E00E9801F /* Images.xcassets */,
 				57D733AA1835526E00E9801F /* Supporting Files */,
 			);
@@ -220,6 +246,7 @@
 			targets = (
 				57D7339F1835526E00E9801F /* RssFeeds */,
 				57D733C01835526E00E9801F /* RssFeedsTests */,
+				57F5EFA2186C3E0C00924012 /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -245,12 +272,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		57F5EFA6186C3E9A00924012 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/appledoc \\\n--project-name \"RSSFeed\" \\\n--project-company \"iAPPease\" \\\n--company-id \"com.iappease\" \\\n--output \"/Users/iappease/Desktop/RssFeeds/Help/\" \\\n--install-docset \\\n--logformat xcode \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--merge-categories \\\n--exit-threshold 2 \\\n--docset-platform-family iphoneos \\\n--ignore \"*.m\" \\\n--include \"/Users/iappease/Desktop/RssFeeds/Help/Images\" \\\n--ignore \"LoadableCategory.h\" \\\n--index-desc \"/Users/iappease/Desktop/RssFeeds/readme.rssfeeds\" \\\n\"/Users/iappease/Desktop/RssFeeds\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		57D7339C1835526E00E9801F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				57D733B01835526E00E9801F /* main.m in Sources */,
+				57CBF58118375C5F00DD7878 /* MTTestViewController.m in Sources */,
+				57D4D097183F19FF00806A2C /* MTheckViewController.m in Sources */,
 				57D733BA1835526E00E9801F /* MTViewController.m in Sources */,
 				57D733B41835526E00E9801F /* MTAppDelegate.m in Sources */,
 			);
@@ -382,6 +427,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RssFeeds/RssFeeds-Prefix.pch";
 				INFOPLIST_FILE = "RssFeeds/RssFeeds-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -395,6 +441,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RssFeeds/RssFeeds-Prefix.pch";
 				INFOPLIST_FILE = "RssFeeds/RssFeeds-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -442,6 +489,20 @@
 			};
 			name = Release;
 		};
+		57F5EFA3186C3E0D00924012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		57F5EFA4186C3E0D00924012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -461,6 +522,7 @@
 				57D733D41835526E00E9801F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57D733D51835526E00E9801F /* Build configuration list for PBXNativeTarget "RssFeedsTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +531,16 @@
 				57D733D71835526E00E9801F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57F5EFA5186C3E0D00924012 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57F5EFA3186C3E0D00924012 /* Debug */,
+				57F5EFA4186C3E0D00924012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
