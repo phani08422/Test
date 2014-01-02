@@ -11,7 +11,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 57F5EFA5186C3E0D00924012 /* Build configuration list for PBXAggregateTarget "Documentation" */;
 			buildPhases = (
-				57F5EFA6186C3E9A00924012 /* ShellScript */,
+				57F5EFA6186C3E9A00924012 /* Run Script */,
 			);
 			dependencies = (
 			);
@@ -226,6 +226,14 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = iAPPease;
 				TargetAttributes = {
+					57D7339F1835526E00E9801F = {
+						DevelopmentTeam = 88W9FW4FT5;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+						};
+					};
 					57D733C01835526E00E9801F = {
 						TestTargetID = 57D7339F1835526E00E9801F;
 					};
@@ -273,13 +281,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		57F5EFA6186C3E9A00924012 /* ShellScript */ = {
+		57F5EFA6186C3E9A00924012 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,11 +433,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RssFeeds/RssFeeds-Prefix.pch";
 				INFOPLIST_FILE = "RssFeeds/RssFeeds-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -438,11 +450,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RssFeeds/RssFeeds-Prefix.pch";
 				INFOPLIST_FILE = "RssFeeds/RssFeeds-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
