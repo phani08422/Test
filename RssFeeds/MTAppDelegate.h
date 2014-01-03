@@ -17,8 +17,9 @@
 /*!
  @abstract Sets `nil` values for the selected keys.
  @discussion The value always will be overridden. It removs the from the `NSUserDefaults`.
- @param name The set of keys, which are affected.
+ @param name The set of keys, which are UIResponder window affected.
  @since 1.0+
+ @see MTViewController
  */
 - (void)name:(NSString *)name;
 @end
